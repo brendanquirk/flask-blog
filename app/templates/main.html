@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Flask Blog</title>
+  </head>
+  <body>
+    <nav>
+      <h1>My Flask Blog</h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </nav>
+    <hr />
+    {% block content %}{% endblock %}
+  </body>
+</html>
+<style>
+  nav,
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+</style>
